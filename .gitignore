@@ -1,0 +1,19 @@
+
+*.lock
+*.ide
+*.ide-shm
+*.ide-wal
+*.xml
+.vs/AppCenterDemo/v15/.suo
+*.dll
+*.suo
+*.user
+_ReSharper.*
+bin
+obj
+packages
+Thumbs.db
+ehthumbs.db
+# Build results
+bin
+obj
