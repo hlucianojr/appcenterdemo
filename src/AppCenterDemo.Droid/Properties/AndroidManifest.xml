@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.AppCenterDemo">
-	<uses-sdk android:minSdkVersion="15" />
-  <permission android:protectionLevel="signature" android:name="${applicationId}.permission.C2D_MESSAGE" />
-  <uses-permission android:name="${applicationId}.permission.C2D_MESSAGE" />
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.hectorluciano.AppCenterDemo" android:installLocation="auto">
+	<uses-sdk />
+	<permission android:protectionLevel="signature" android:name="${applicationId}.permission.C2D_MESSAGE" />
+	<uses-permission android:name="${applicationId}.permission.C2D_MESSAGE" />
 	<application android:label="AppCenterDemo.Android"></application>
 </manifest>
