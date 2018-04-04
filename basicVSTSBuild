@@ -1,0 +1,44 @@
+resources:
+- repo: self
+queue:
+  name: Hosted VS2017
+  demands: 
+  - MSBuild
+  - Xamarin.Android
+
+
+#Your build definition references an undefined variable named ‘Parameters.restorePkgSolution’. Create or edit the build definition for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build definition references an undefined variable named ‘build.binariesdirectory)/$(BuildConfiguration’. Create or edit the build definition for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build definition references an undefined variable named ‘Parameters.appFiles’. Create or edit the build definition for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build definition references an undefined variable named ‘build.binariesdirectory)/$(BuildConfiguration’. Create or edit the build definition for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
+variables:
+  BuildConfiguration: 'Release'
+steps:
+- task: NuGetToolInstaller@0
+  inputs:
+    versionSpec: 4.4.1
+
+- task: NuGetCommand@2
+  inputs:
+    restoreSolution: '$(Parameters.restorePkgSolution)'
+
+- task: XamarinAndroid@1
+  inputs:
+    projectFile: '**/*Droid*.csproj'
+    outputDirectory: '$(build.binariesdirectory)/$(BuildConfiguration)'
+    configuration: '$(BuildConfiguration)'
+
+- task: AndroidSigning@2
+  inputs:
+    apkFiles: '$(Parameters.appFiles)'
+    jarsign: false
+    zipalign: false
+  enabled: false
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(build.binariesdirectory)/$(BuildConfiguration)'
+    ArtifactName: drop
+    publishLocation: Container
+
+
