@@ -53,4 +53,9 @@ VSTS Demo
     1.2 For Droid
 2. Talk about Custom Host build vs Cloud Hosted Builds
 3. Kick of a build
-2. Setup Basic release Definition
+4. Setup Basic release Definition
+    4.1 Talk about why you would create your own release definition.  This is all about fine tuning your CD proess inside your DevOps process. 
+    We are still using AppCenter services for distribution and testing but from the point of custom pipeline/automation.  This is where
+    you would deploy other Azure assest, such as App Services, Database deployment, etc.
+    4.2 Show the numebers of task available from the market place.
+    
