@@ -17,3 +17,4 @@ ehthumbs.db
 # Build results
 bin
 obj
+*.ipa
