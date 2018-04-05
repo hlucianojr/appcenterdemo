@@ -10,3 +10,20 @@ Feature A: Include a new AppCenter SDK feature and gets pushed to dev.
 Questions 
 1. How to view or run builds for simulators.
 2. How to use release to deploy differnt paths.
+
+Speaking Comments
+AppCenter Description:
+The simplist exaplanation I can give about AppCenter is that it is a group of services that when combine together 
+can be use for a complete mobile DevOps solution.  Everything from build, test, monitor, analysis and distribute modern mobile apps.
+This includes support for everything from Xamarin, Swift, Object-C, Java, UWP and MacOS.  That's write almost anything you want to write your code AppCenter supports it.
+
+Now What are the benefit of AppCenter.
+1. 0-60 Build, Test and Distribution Configuration
+2. Cloud Testing Devices
+3. Monitor's App Health, Crashes, Events
+4. Helps deploy to AppStore'
+
+VSTS Description:
+VSTS powerRelease Managment pipeline, build complex releases.
+1. Custom Host Build
+2. Save build Configuration and reuse.
