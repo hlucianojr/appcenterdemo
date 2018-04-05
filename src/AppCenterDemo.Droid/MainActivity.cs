@@ -19,11 +19,10 @@ namespace AppCenterDemo.Droid
     {
         protected override void OnCreate(Bundle bundle)
         {
-            Push.SetSenderId("31642920974");
+            //Push.SetSenderId("31642920974");
             AppCenter.LogLevel = LogLevel.Verbose;
-            AppCenter.Start("2e3ad541-1f14-44ff-a71d-943286857cfd",
-                   typeof(Analytics), typeof(Crashes), typeof(Distribute),
-                   typeof(Push));
+			AppCenter.Start("108abdc6-2f01-42d2-abb8-7cfb5b842929",
+                   typeof(Analytics), typeof(Crashes),typeof(Push));
 
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;

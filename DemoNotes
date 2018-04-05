@@ -1,0 +1,12 @@
+Demo Notes
+
+Branches
+AppStore: builds and distributes to app store.
+Master: Builds Ad-hoc as release increase build number not deub sysmbols and send to all testers
+Dev: Build Ad-hoc as debug with sysmbols distribute to dev team only.
+Feature A: Include a new AppCenter SDK feature and gets pushed to dev. 
+
+
+Questions 
+1. How to view or run builds for simulators.
+2. How to use release to deploy differnt paths.

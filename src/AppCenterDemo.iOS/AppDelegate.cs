@@ -4,6 +4,10 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+using Microsoft.AppCenter.Push;
 
 namespace AppCenterDemo.iOS
 {
@@ -23,6 +27,9 @@ namespace AppCenterDemo.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+
+			AppCenter.Start("ffce07af-d870-46be-bb7f-85b3f1b5cb4d", typeof(Analytics), typeof(Crashes),typeof(Push));
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
