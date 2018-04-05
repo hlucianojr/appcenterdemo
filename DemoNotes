@@ -27,3 +27,30 @@ VSTS Description:
 VSTS powerRelease Managment pipeline, build complex releases.
 1. Custom Host Build
 2. Save build Configuration and reuse.
+3. Secure Files -KeyVault
+    3.1 Show how to create secure files and secure variable
+4. Scheduling builds 
+
+
+Demo Steps
+AppCenter Demo 
+1. Create a App in App AppCenter
+2. Point to a GitHub repo
+3. Setup up a basic build 
+4. Setup a basic Distribution
+5. Setup a basic cloud test(optional)
+
+AppCenter Branches
+1. Create a dev branch and configure it to build for cloud test on one device.
+2. Create a qa branch and configure it to run on multiple cloud devices.
+3. Configure a master branch to build for AppStore. 
+
+Comments Talk about the though differnces between each approach and how is really about what's your DevOps process.
+
+VSTS Demo
+1. Create a Basic Bulid Definition
+    1.1 For iOS
+    1.2 For Droid
+2. Talk about Custom Host build vs Cloud Hosted Builds
+3. Kick of a build
+2. Setup Basic release Definition
